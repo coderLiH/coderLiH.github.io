@@ -1,0 +1,24 @@
+html, body {
+    font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.main_area {
+    width: 100%;
+    text-align: center;
+    min-width: 768px;
+}
+
+.main_logo {
+    width: 100px;
+    margin-top: 80px;
+}
+
+.main_title {
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 15px;
+}
