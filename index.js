@@ -138,9 +138,4 @@ $(document).ready(function(){
 		$("#Kecheng").css("width","54px");
 		$("#Kecheng").css("height","54px");
 	});
-
-
-	$("#YGUMMI").click(function(){
-		window.location.href = "./templates/1.html";
-	});
 });
