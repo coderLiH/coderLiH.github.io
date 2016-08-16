@@ -138,4 +138,11 @@ $(document).ready(function(){
 		$("#Kecheng").css("width","54px");
 		$("#Kecheng").css("height","54px");
 	});
+
+	$("#more_talk").mouseenter(function(){
+		$("#more_talk_content").css("display","inherit");
+	});
+	$("#more_talk").mouseleave(function(){
+		$("#more_talk_content").css("display","none");
+	});
 });

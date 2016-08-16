@@ -20,8 +20,4 @@ $(document).ready(function(){
 		$("#pop_container").css('display','none');
 	});
 
-	$("#middle").click(function(){
-		window.location.href="../index.html";
-	});
-
 });
