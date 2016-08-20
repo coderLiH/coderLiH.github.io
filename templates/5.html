@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="renderer" content="webkit">
+    <title>营财一体化</title>
+    <link href="../css/base.css" rel="stylesheet">
+</head>
+<body style="position:relative;">
+	<div class="content">
+		<img class="header" src="../images/header5.png"/>
+		<img class="subheader" src="../images/desc5.png"/>
+		<h2 class="title">项目背景</h1>
+		<p class="desc">2015年出台了新的国家电力体制改革制度，根据要求电网公司将承担电力市场结算的职能，负责收费、结算、归集交叉补贴，代收政府性基金，并按规定及时向有关发电公司和售电公司支付电费。因此，为适应电改，建立与之匹配的结算业务处理系统变得尤为重要。才能确保为电力市场主体提供安全、快捷、高效的电费清分和资金结算服务，才能巩固电网公司统一电费结算的核心优势。</p>
+		<div style="background-color:rgb(242,242,242);width:100%;padding:1px;text-align:left;font-size:14px;">
+			<p>同营财一体化、把作品主要焦点放在方案的讨论和多次变更，最终解决了场景下的问题上，用研相关不再赘述。</p>
+		</div>
+		<h2 class="title">设计历程</h1>
+		<p style="margin-top:10px;margin-bottom:0px;text-align:left;font-size:15px;">1、基础信息管理：交易合同信息管理</p>
+		<p style="margin-top:0px;margin-bottom:0px;text-align:left;font-size:13px;">基础信息管理是整个系统中最基础环节。相当于在初始化时，将相关的合同、交易、电厂、售电公司等各种资料进行的一个确认整合管理。</p>
+		<img class="full_img" src="../images/5_1.png"/>
+		<img class="full_img" src="../images/5_2.png"/>
+		<div style="width:100%;text-align:left;margin-top:10px;">
+			<p style="font-size:14px;">A1：和需求认真梳理过流程和功能后，我发现其实对于用户来说最关键的是要进行信息启用的审核，而并非是查询，上面的几个查询条件，其实就是针对特定用户想要过滤某个具体合同的非核心场景。把它们放置在界面的最前面，总会让用户产生歧义，到底是要先进行查询呢还是直接进行业务操作？结论是我大胆的建议把所有的查询条件都去掉，让整个界面更清晰简洁。至于查找的场景，表格中有强大的过滤筛选功能即可满足。</p>
+			<p style="font-size:14px;">A2：这是初次讨论后绘制的界面，仔细分析逻辑和信息层次都是很不清晰的，在我的询问下，需求才说出主要操作少了一个启用、停用的步骤。于是我建议，把整个层级分为两个页签，默认是未启用页签主要进行启用相关业务处理，第二个是已启用页签。主要方便用户查询导出信息。</p>
+			<p style="font-size:14px;">A3：列表展示时，完整的合同信息，并不是所有项都是用户所关注的，事实上只需展示关键字段即可，而对于完整情况，通过提供单屏展示的方式穿透进行一条记录所有项目的查看。</p>
+		</div>
+		<div style="height:20px;width:100%;"></div>
+		<img class="full_img" src="../images/5_3.png"/>
+		<img class="full_img" src="../images/5_4.png"/>
+		<img class="full_img" src="../images/5_5.png"/>
+		<img class="full_img" src="../images/5_6.png"/>
+		<img class="full_img" src="../images/5_7.png"/>
+		<img class="full_img" src="../images/5_8.png"/>
+		<div style="height:20px;width:100%;"></div>
+		<img class="full_img" src="../images/5_9.png"/>
+		<div style="width:100%;text-align:left;margin-top:10px;">
+			<p style="font-size:14px;margin:1px;">重点分析后发现，</p>
+			<p style="font-size:14px;margin:1px;">1、主要任务是关于结算实例的管理，而结算类型、元素、算法规则等，都是相对独立的为了管理结算实例存在的，逻辑上不应该是平级的关系。</p>
+			<p style="font-size:14px;margin:1px;">2、对于一条的结算实例，强调的是一个发布的概念，如能区块化，把每一个实例单独管理，则更符合用户的实际操作。传统的表格展示，过于程序化、流程化，缺少于用户对话的感觉，不能真正切中用户的核心需求，没有一种管理的概念。</p>
+			<p style="font-size:14px;margin-bottom:0px;">优化后：</p>
+		</div>
+		<img class="full_img" src="../images/5_10.png"/>
+		<div style="width:100%;text-align:left;margin-top:10px;">
+			<p style="font-size:14px;margin-top:20px;margin-bottom:0px;">关于新增方式，又提供了另一种选择方案，最后考虑实际实现场景会一直出现在实例的最前方，所以就没有采纳。</p>
+		</div>
+		<img class="full_img" src="../images/5_11.png"/>
+		<div style="width:100%;text-align:left;margin-top:10px;">
+			<p style="font-size:14px;margin-top:40px;margin-bottom:0px;">3、应收业业务数据管理：</p>
+		</div>
+		<img class="full_img" src="../images/5_12.png"/>
+		<div style="width:100%;text-align:left;margin-top:10px;">
+			<p style="font-size:14px;margin-top:10px;margin-bottom:0px;">总结算电量需要与另外两个功能里的数据进行核对，一开始是选择进行穿透查看比对，但遇到的问题就是数据量太庞大，比对过程非常复杂且效率非常低。于是就有的经过后直接展示对应核对数据情况的设计。</p>
+			<p style="font-size:14px;margin-top:40px;margin-bottom:0px;">4、电费清分处理</p>
+		</div>
+		<img class="full_img" src="../images/5_13.png"/>
+		<div style="width:100%;text-align:left;margin-top:10px;">
+			<p style="font-size:14px;margin-top:10px;margin-bottom:0px;">电费清分时，直接点击清分后进入已清分界面，用户并不知道整个清分过程。后续优化，把清分过程可视化，每一步骤的清晰可见，直观展示。</p>
+		</div>
+		
+		<img class="icon_img" src="../images/icon.jpg"/>
+		<p class="finish">都说电力系统是目前人类运行的最大最复杂的系统之一。其复杂性不仅体现在数据量大、信息庞大、操作复杂，更体现背后数据交互、角色、场景、任务繁多。可以说，市场化电费结算系统，只是这个集团化企业应用级财务软件的冰山一角。这几年的工作经历让我对这个点深有感触，但我仍保持着一个回归初衷的观点。越是复杂，用户体验上就要越是要呈现一种简洁。作为交互设计师，我们的作用就是分析问题的关键所在，抓住场景中最核心的点，通过分析、思考明确用户主要任务是什么？要解决什么样的问题？主要痛点是什么？</p>
+		<p class="finish">GRIS3.0设计方案落地以后，如何结合具体项目进行分析设计，如何把握特性性与普遍性也是我一直思考的问题。而无论做多少方案，学会总结、吸收经验才是最关键的。有一些规律是可以获得的，这些法则无论在任何产品中都是适用的。所以我很感激，越是难度大越是挑战性高，就越是能成长得更快。所以这个项目的深入设计参与，真的让我懂得了很多。特别有成就感的是，在与需求同事的沟通过程中，渐渐地她被我说服，能开始懂得站在用户的角度去考虑使用的场景，常常对我说 “原来界面还能够这么设计。这么多点我怎么就没想到？”这就是一种思维模式的转变，我们大部分的需求其实只懂业务，只懂功能，而不结合用户体验就不可能有好的产品。在协作过程中，我明白了，无论是什么样的产品，需求、设计、开发、测试也罢，其实都是服务于统一核心目标的，即为了实现一个更好用、更符合用户预期帮助用户解决问题的产品。</p>
+	</div>
+
+	<div class="bottom">
+		<a href="./4.html"><img id="left" src="../images/left.jpg"/></a>
+		<a href="../index.html"><img id="middle" src="../images/middle.jpg"/></a>
+		<a href="./6.html"><img id="right" src="../images/right.jpg"/></a>
+	</div>
+
+	<script src="../libs/jquery-3.1.0.min.js"></script>
+	<script src="../js/base.js"></script>
+</body>
+</html>
