@@ -24,6 +24,8 @@ body {
     height: 400px;
     margin: auto;
     position: relative;
+    z-index: 200;
+    background-color: #fff;
 }
 
 .main_sec1 {
@@ -200,6 +202,7 @@ body {
     height: 130px;
     bottom: 0px;
     position: absolute;
+    z-index: 100;
 }
 .bottom_top {
     width: 100%;
