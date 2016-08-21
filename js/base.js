@@ -20,4 +20,9 @@ $(document).ready(function(){
 		$("#pop_container").css('display','none');
 	});
 
+
+	$('.my-slider').unslider({
+		autoplay: true,
+		arrows: false
+	});
 });
