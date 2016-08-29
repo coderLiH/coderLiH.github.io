@@ -20,8 +20,23 @@ $(document).ready(function(){
 		$("#pop_container").css('display','none');
 	});
 
+	$("#back").click(function(){
+	    $(document).scrollTop(0);
+	});
 
-	$('.my-slider').unslider({
+	$(document).bind('scroll', function(){
+        var len=$(this).scrollTop()
+        console.log('ss');
+        if(len>=100){
+            //显示回到顶部按钮
+            $('#back').show();
+        }else{
+            //影藏回到顶部按钮
+            $('#back').hide();
+        }
+    });
+
+    $('.my-slider').unslider({
 		autoplay: true,
 		arrows: false
 	});
