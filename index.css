@@ -20,9 +20,20 @@ body {
 }
 
 .main_logo {
-    width: 200px;
+    width: 90px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.main_name {
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.main_job {
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .main_contents {
