@@ -89,7 +89,9 @@ body {
     padding-top: 20px;
 }
 .sec_hover_large_text3 {
-
+    font-size: 12px;
+padding-top: 3px;
+padding-bottom: 3px;
 }
 
 .sec_hover_small_text {
