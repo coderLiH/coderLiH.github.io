@@ -96,17 +96,17 @@ padding-bottom: 0px;
 
 .sec_hover_small_text {
     padding-top: 0px;
-    margin-top: 3px;
+    margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 9px;
+    font-size: 11px;
 }
 .sec_hover_small_text2 {
-    margin-top: 8px;
-    font-size: 9px;
+    padding-top: 3px;
+    font-size: 11px;
 }
 .sec_hover_small_text3 {
-    margin-top: 20px;
-    font-size: 9px;
+    margin-top: 0px;
+    font-size: 11px;
 }
 
 .main_sec2 {
