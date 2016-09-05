@@ -12,10 +12,6 @@ $(document).ready(function(){
 		$("#pop").attr('src','../images/1_7.jpg');
 	});
 
-	$("#1_more").click(function(){
-		window.location.href="./1_1.html";
-	});
-
 	$("#pop_container").click(function(){
 		$("#pop_container").css('display','none');
 	});
