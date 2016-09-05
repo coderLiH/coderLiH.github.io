@@ -145,4 +145,11 @@ $(document).ready(function(){
 	$("#more_talk").mouseleave(function(){
 		$("#more_talk_content").css("display","none");
 	});
+
+	$("#wechat").mouseenter(function(){
+		$("#leilei_qr").css("display","inherit");
+	});
+	$("#wechat").mouseleave(function(){
+		$("#leilei_qr").css("display","none");
+	});
 });

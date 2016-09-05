@@ -352,3 +352,11 @@ margin-bottom: 0px;
     font-size: 11px;
     text-align: left;
 }
+
+#leilei_qr {
+    position: absolute;
+    bottom: 70px;
+    left: 7%;
+    width: 100px;
+    display: none;
+}
