@@ -20,9 +20,21 @@ $(document).ready(function(){
 	    $(document).scrollTop(0);
 	});
 
+	$("#c14_1").click(function(){
+		$("#pop_container").css('display','inherit');
+		$("#pop").attr('src','../images/14_5.png');
+	});
+	$("#c14_2").click(function(){
+		$("#pop_container").css('display','inherit');
+		$("#pop").attr('src','../images/14_7.png');
+	});
+	$("#c14_3").click(function(){
+		$("#pop_container").css('display','inherit');
+		$("#pop").attr('src','../images/14_8.png');
+	});
+
 	$(document).bind('scroll', function(){
         var len=$(this).scrollTop()
-        console.log('ss');
         if(len>=100){
             //显示回到顶部按钮
             $('#back').show();
